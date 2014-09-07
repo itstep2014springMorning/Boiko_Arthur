@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+
+int main()
+{
+    setlocale(0, "");
+    int i=1, x, p, res=1;
+    printf("Введите число: ");
+    scanf("%d",&x);
+    printf("Введите степень: ");
+    scanf("%d",&p);
+
+    while (i<=p)
+    {
+        res=res*x;
+        i=i+1;
+    }
+    if (p==0)
+    {
+        res=1;
+    }
+    printf ("%d в степени %d = %d",x,p,res);
+    return 0;
+}
